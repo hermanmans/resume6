@@ -6,9 +6,14 @@ body{
 
 header {
   text-align: center;
+  background-color: #343330;
 }
 
 footer {
   background-color: #343330;
   text-align: center;
+}
+
+div{background-color: lightblue;
+  width: max-content; 
 }
