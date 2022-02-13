@@ -3,21 +3,53 @@
   <head>
     <title>resumeprac</title>
 
-      <link rel="stylesheet" href="css/stylesheet.css">
+      <style>
+          #header{font-size: 20px;
+            background-color:gray;
+            margin:10px;
+            padding:50px;
+            text-align: center;
+            }
+
+            .body{border-style: solid; 
+            border-width: 15px;
+            border-color:orangered;}
+
+            #sidebar{background-color: orangered;
+            margin-right: 1000px;}
+
+            #img1,#img2,#img3{background-color:gray;
+            border-style: solid;
+            border-width:5px;
+            border-color: orangered;
+            border-radius: 200px 200px 200px 200px;}
+
+            .main{margin: 10px;}
+
+            .links{text-align: center;
+            background-color: gray;
+            margin:10px}
+
+            nav{font-size:large;
+            }
+            
+
+
+      </style>
     
   </head>
 
   <body class="body">
      <header id="header" class="name"> 
         <h1>Herman Mans</h1>
-        <img src="Images/Herman Mans.jpg" alt="Could not find image" width="230" height="275">
+        <img id="img1" src="Images/Herman Mans.jpg" alt="Could not find image" width="300" height="300">
         <br>
         <b style="font-size: large;">I am a hard working individual who would like to further my knowledge as a developer.</b>
      
     </header>
 
         <br><br>
-      <main>  
+      <main class="main">  
         <div id="sidebar" class="index">
             <nav>
                 <h1>Menu</h1>
@@ -57,11 +89,11 @@
             <h4>Cell:+27 65698 8670</h4>
             <h4><Address>Cape Town</Address></h4>
             <a href="http://linkedin.com/in/herman-schroeder-mans-9402a395">
-                <img src="Images/Linkedin.png" alt="Could not find image" width="95" height ="95">
+                <img id="img2" src="Images/Linkedin.png" alt="Could not find image" width="95" height ="95">
             </a>
 
             <a href="http://facebook.com/herman.mans.73">
-                <img src="Images/Facebook.png" alt="Could not find image" width="95" height="95">
+                <img id="img3" src="Images/Facebook.jpg" alt="Could not find image" width="95" height="95">
             </a>
             
             
