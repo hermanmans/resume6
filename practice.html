@@ -25,7 +25,9 @@
             border-color: orangered;
             border-radius: 10px 10px 10px 10px;}
 
-            .main{margin: 10px;}
+            .article{margin-left:10px;}
+
+            section{display: flex;flex-direction: column;}
 
             [class="LINKS" i]{text-align: center;
             background-color: gray;
@@ -33,33 +35,33 @@
 
             nav{font-size:large}
 
-            li:hover{border: 2px solid black;}
+            li:hover{text-indent: 5px;border: 2px solid black;border-radius:20px 20px 20px 20px}
             
       </style>
     
   </head>
 
-  <body class="body">
+  <section class="section">
      <header id="header"> 
         <h1>Herman Mans</h1>
         <img id="img1" src="Images/Herman Mans.jpg" alt="Herman headshot" width="300" height="300">
         <p>
         <b style="font-size: large;">I am a hard working individual who would like to further my knowledge as a developer.</b>
-    </p>
-    </header>
+        </p>
+     </header>
 
-      <main class="main">  
         <div id="sidebar" class="index">
             <nav>
-                <h1>Menu</h1>
+                <h1 id="menu">Menu</h1>
                 <ul>            
-                    <li><a href="#education" aria>Education</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                 </ul>
             </nav>
         </div>
 
+      <article class="article">  
             <div class="Education">
                 <h2 id="education">Education</h2>
                     <h3> Bachelors Degree: Mining Engineering</h3>
@@ -88,7 +90,7 @@
                         <li>Humble</li>
                     </ul>
             </div>
-      </main>
+      </article>
         <footer class="links"> 
             <h2>Contact Details</h2>
             <h4>Cell:+27 65698 8670</h4>
@@ -108,6 +110,6 @@
             
         </footer>
 
-    </body>
+    </section>
 
 </html>
