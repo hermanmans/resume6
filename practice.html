@@ -5,7 +5,7 @@
 
       <style>
        
-          *{box-sizing: border-box;}
+          /*{box-sizing: border-box;}*/
           #header{font-size: 20px;
             background-color:gray;
             margin:10px;
@@ -17,8 +17,7 @@
             border-width: 15px;
             border-color:orangered;}
 
-            #sidebar{background-color: orangered;
-            margin-right: 1000px;}
+            #sidebar{background-color: orangered;margin-left:10px}
 
             [src^="Images"]{border-style: solid;
             border-width:5px;
@@ -26,8 +25,9 @@
             border-radius: 10px 10px 10px 10px;}
 
             .article{margin-left:10px;}
-
-            section{display: flex;flex-direction: column;}
+            main{display: flex;flex-direction:row;}
+            .section{display: flex;flex-direction: column;}
+           
 
             [class="LINKS" i]{text-align: center;
             background-color: gray;
@@ -40,34 +40,38 @@
       </style>
     
   </head>
-
+ <main>
   <section class="section">
-     <header id="header"> 
+
+    <div id="sidebar" class="index">
+        <nav>
+            <h1 id="menu">Menu</h1>
+            <ul>            
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+      <header id="header"> 
         <h1>Herman Mans</h1>
         <img id="img1" src="Images/Herman Mans.jpg" alt="Herman headshot" width="300" height="300">
         <p>
         <b style="font-size: large;">I am a hard working individual who would like to further my knowledge as a developer.</b>
         </p>
-     </header>
+      </header>
 
-        <div id="sidebar" class="index">
-            <nav>
-                <h1 id="menu">Menu</h1>
-                <ul>            
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </nav>
-        </div>
-
-      <article class="article">  
+        
+      <div class="all">
+      <article class="article">
+         
             <div class="Education">
                 <h2 id="education">Education</h2>
                     <h3> Bachelors Degree: Mining Engineering</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nostrum quam reprehenderit veniam, quas necessitatibus tenetur in, harum, officia saepe corrupti magnam autem delectus dolorum laborum obcaecati quidem maiores! Maxime.</p>
-                        <p style="font:large">I am a very big font!</p> /*Example of styles
-                        <p style="font:small">I am a very small font!</p>
+                        <p style="font-size: xx-large">I am a very big font!</p>
+                        <p style="font-size:italic">I am a very small font!</p>
 
                     <h3>Code Space Academy: Full Stack Developer at <a href="http://codespace.co.za/">CodeSpace</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -109,7 +113,8 @@
             
             
         </footer>
-
-    </section>
+      </div>
+  </section>
+ </main>
 
 </html>
