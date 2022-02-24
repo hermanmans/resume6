@@ -15,24 +15,23 @@
 
             html{border-style: solid; 
             border-width: 15px;
-            border-color:orangered;}
+            border-color:orangered;background-color:aqua}
 
-            #sidebar{background-color: orangered;margin-left:10px}
+            .article{margin-left:10px}
+            #sidebar{background-color: orangered;margin-left:10px;padding-right: 10px;}
+            .section{display:flex;flex-direction: column;}
+            .article{display: flex;flex-direction: row;}
 
             [src^="Images"]{border-style: solid;
             border-width:5px;
             border-color: orangered;
             border-radius: 10px 10px 10px 10px;}
-
-            .article{margin-left:10px;display: flex;}
-            main{display: flex;}
-            
+          
            
-
             [class="LINKS" i]{text-align: center;
             background-color: gray;
             margin:10px}
-
+            
             nav{font-size:large}
 
             li:hover{text-indent: 5px;border: 2px solid black;border-radius:20px 20px 20px 20px}
@@ -40,11 +39,8 @@
       </style>
     
   </head>
- <main>
-  <section class="section">
 
- 
-    
+  <section class="section">
       <header id="header"> 
         <h1>Herman Mans</h1>
         <img id="img1" src="Images/Herman Mans.jpg" alt="Herman headshot" width="300" height="300">
@@ -64,7 +60,7 @@
         </nav>
        </div>
         
-      <div>
+      <div class="content">
       <article class="article">
          
             <div class="Education">
@@ -96,7 +92,9 @@
                     </ul>
             </div>
       </article>
-        <footer class="links"> 
+      </div>
+
+      <footer class="links"> 
             <h2>Contact Details</h2>
             <h4>Cell:+27 65698 8670</h4>
             <h4><Address>Cape Town</Address></h4>
@@ -113,9 +111,7 @@
             </a>
             
             
-        </footer>
-      </div>
+      </footer>
+      
   </section>
- </main>
-
 </html>
