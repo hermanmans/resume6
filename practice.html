@@ -5,7 +5,7 @@
 
       <style>
        
-          *{box-sizing: border-box;}*
+          *{box-sizing: border-box;}
           #header{font-size: 20px;
             background-color:gray;
             margin:10px;
@@ -15,26 +15,23 @@
 
             html{border-style: solid; 
             border-width: 15px;
-            border-color:orangered;background-color:aqua}
+            border-color:orangered;font-family: Arial, Helvetica, sans-serif;}
 
-            .article{margin-left:10px}
-            #sidebar{background-color: orangered;margin-left:10px;padding-right: 10px;}
-            .section{display:flex;flex-direction: column;}
-            .article{display: flex;flex-direction: row;}
+            #sidebar{background-color:darkolivegreen;margin-left:10px;padding-right: 10px;}
+            .content{display:flex;}
+            .article{display:flex;flex-direction:column;padding:10px;border:3px solid black;}
 
             [src^="Images"]{border-style: solid;
             border-width:5px;
             border-color: orangered;
             border-radius: 10px 10px 10px 10px;}
-          
-           
+
             [class="LINKS" i]{text-align: center;
             background-color: gray;
             margin:10px}
-            
-            nav{font-size:large}
 
-            li:hover{text-indent: 5px;border: 2px solid black;border-radius:20px 20px 20px 20px}
+            nav{font-size:large;text-align:center;}
+
             
       </style>
     
@@ -49,52 +46,85 @@
         </p>
       </header>
 
+    <div class="content">
       <div id="sidebar" class="index">
         <nav>
-            <h1 id="menu">Menu</h1>
-            <ul>            
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
+            <h1 id="menu">Menu</h1>            
+                <p><a href="#education">Education</a></p>
+                <p><a href="#experience">Experience</a></p>
+                <p></p><a href="#skills">Skills</a> </p>  
         </nav>
        </div>
         
-      <div class="content">
+      
       <article class="article">
          
             <div class="Education">
                 <h2 id="education">Education</h2>
-                    <h3> Bachelors Degree: Mining Engineering</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nostrum quam reprehenderit veniam, quas necessitatibus tenetur in, harum, officia saepe corrupti magnam autem delectus dolorum laborum obcaecati quidem maiores! Maxime.</p>
-                        <p style="font-size: xx-large">I am a very big font!</p>
-                        <p style="font-size:italic">I am a very small font!</p>
 
-                    <h3>Code Space Academy: Full Stack Developer at <a href="http://codespace.co.za/">CodeSpace</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Code Space Academy: Full Stack Developer at <a href="http://codespace.co.za/">CodeSpace</a></h3>
+                    <p>Introduction to Web: Introduction to HTML Concepts and CSS styling</p>
+                
+                <h3> Bachelors Degree:Mining Engineering</h3>
+                        <p>Duration: 02/2012 to 12/2017</p>
+                        <p>Institution: University of Pretoria</p>
+
+                <h3>Secondary Education:Matric Certificate</h3>
+                        <p> Duration: 01/2007 to 12/2011</p>
+                        <p>Institution: Die Hoërskool Menlopark</p>
+
+                    
             </div> 
 
             <div class="Experience">    
                 <h2 id="experience">Experience</h2>
-                    <h3>Job 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    
-                    <h3>Job 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Junior Operations Manager</h3>
+                        <p><ul>
+                                <li>Coordinate routing for cleaning teams across South Africa</li>
+                                <li>Record,analyze and present key information to supervisors and clientele</li>
+                                <li>Invoice all ATM related maintenance and installations</li>
+                           </ul>
+                        </p>                    
+                    <h3>Mine Planning Engineer</h3>
+                        <p>
+                            <ul>
+                                <li>Process:Large quantities of supporting geological data-sets are received and processed to increase the confidence of the mine design
+                            </li>
+                                <li>Plan - Working directly with the operations director, various mining methods are scrutinized and weighed-up for the most efficient and cost-effective solution.
+                            </li>
+                                <li>Design/Simulation:The processed information is represented in a mining simulation to run multiple iterations. A final mine model is selected to represent an optimised result.
+                            </li>
+                                <li>Tender Process:A total project tender document/agreement is produced with various inputs from the project team.  
+                            </li>
+                                <li>Management:Manage and report on the project managers mine production timeline and performance, manage and report on the administrators' monthly diesel consumption sheet and utilisation report.
+                            </li>
+                                <li>Other responsibilities: Visually investigate possible mining opportunities using Planet GIS, Google earth and data sets of geological borehole information.
+                            </li>
+                            </ul>
+                        </p>
+
+                    <h3>English Teacher Abroad</h3>
+                        <p><ul>
+                                <li>Company: APAX English</li>
+                                <li> English Educator for ages 7 to 18</li>
+                           </ul>
+                        </p> 
             </div>
 
             <div class="Skills">
                 <h2 id="skills">Skills</h2>
                     <ul>
                         <li>Problem solving</li>
-                        <li>Hard Working</li>
-                        <li>Humble</li>
+                        <li>Hard Worker</li>
+                        <li>Creative Thinker</li>
+                        <li>Diligent</li>
+                        <li>Eager learner</li>
                     </ul>
             </div>
       </article>
-      </div>
+    </div>
 
-      <footer class="links"> 
+    <footer class="links"> 
             <h2>Contact Details</h2>
             <h4>Cell:+27 65698 8670</h4>
             <h4><Address>Cape Town</Address></h4>
@@ -109,9 +139,7 @@
             <a href="mailto:hsmans0601@gmail.com">
                 <img id="img4" src="Images/Gmail.png" alt="Gmail Logo" width="95" height="85">
             </a>
-            
-            
-      </footer>
-      
-  </section>
+       
+    </footer>
+  </section>  
 </html>
