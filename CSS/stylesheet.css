@@ -2,13 +2,27 @@
 *{box-sizing: border-box;}
 ul li{padding: 3px;}
 nav{font-size:large;text-align:center;}
-a{color:blue;}
-p a:hover{border:solid 1px black;border-radius: 10px 10px 10px 10px;
+a{color:black;}
+
+p a:hover{border-radius: 10px 10px 10px 10px;
+  padding: 4px;
+  background-color: white;
+}
+h2{
+  background-image:url("/Images/Background.jpg");
+  background-size: cover;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid gray;
+  padding-left: 10px;
 }
 html{border-style: solid; 
   border-width: 15px;
   border-color:gray;font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
+@keyframes header {
+  100%{transform: rotate(360deg);}
+}
+
 header{font-size: 20px;
   background-image:url("/Images/Background.jpg"); 
   background-size:cover;
@@ -16,14 +30,19 @@ header{font-size: 20px;
   padding:50px;
   text-align: center;
   border: 3px solid gray;
+  animation-name: header;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
-.sidebar{background-image:url("/Images/Background.jpg"); 
+.sidebar{background-image:url("/Images/Background5.jpg");
   background-size:cover;
-  padding:10px;
+  padding:20px;
   margin: 10px;
   border:2px solid gray;
+  width: 200px;
 }
-.content{display:flex;}
+.content{display:flex;
+}
  main{display:flex;
   flex-direction:column;
   padding:10px;
